@@ -28,6 +28,15 @@ private:
     * @param value return the shade of grey of the target area
     */
     void visit(int x, int y, int& count, unsigned int& value);
+
+    /**
+    * based on the target pixel, find all pixels in that area (Recrusive Method)
+    * @param x x-coordinate value of the target pixel
+    * @param y y-coordinate value of the target pixel
+    * @param count return the count of pixels in the target area
+    * @param value return the shade of grey of the target area
+    */
+    void visitR(int x, int y, int& count, unsigned int& value);
     
 public:
     // constructor
